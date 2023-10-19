@@ -43,8 +43,10 @@ const canviColors = (nouColor, delay, continua) => {
   }, delay);
 };
 
-canviColors("red", 1000, () => {
-  canviColors("yellow", 1000, () => {
-    canviColoros("violet", 1000, () => {});
+canviColors('red', 1000, () => {
+  canviColors('yellow', 3000, () => {
+    canviColors('violet', 1000, () => {
+      canviColors('blue', 3000);
+    });
   });
 });
